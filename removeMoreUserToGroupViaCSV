@@ -1,0 +1,1 @@
+import-csv C:\Path\group.csv | ForEach-Object {remove-ADGroupMember -Identity $_.groupname -Members $_.username}
